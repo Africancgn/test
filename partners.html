@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Partners</title>
+  <link rel="icon" href="images/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu { display:none; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="images/logo.png" alt="ACGN Logo" class="h-10 w-10 object-contain" />
+      <span class="font-semibold tracking-tight">African Corporate Governance Network</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="index.html" class="hover:text-blue-700">Home</a>
+      <div class="relative dropdown">
+        <button class="inline-flex items-center gap-1 hover:text-blue-700">About
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="absolute dropdown-menu mt-2 bg-white border rounded-lg shadow-lg w-56 p-2">
+          <a href="organisation.html" class="block px-3 py-2 rounded hover:bg-gray-50">Organisation</a>
+          <a href="history.html" class="block px-3 py-2 rounded hover:bg-gray-50">History</a>
+        </div>
+      </div>
+      <a href="membership.html" class="hover:text-blue-700">Membership</a>
+      <a href="committees.html" class="hover:text-blue-700">Committees</a>
+      <div class="relative dropdown">
+        <button class="inline-flex items-center gap-1 hover:text-blue-700">Forums
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="absolute dropdown-menu mt-2 bg-white border rounded-lg shadow-lg w-60 p-2">
+          <a href="ceos-forum.html" class="block px-3 py-2 rounded hover:bg-gray-50">CEO's Forum</a>
+          <a href="chairs-forum.html" class="block px-3 py-2 rounded hover:bg-gray-50">Chairs Forum</a>
+        </div>
+      </div>
+      <a href="events.html" class="hover:text-blue-700">Our Events</a>
+      <div class="relative dropdown">
+        <button class="inline-flex items-center gap-1 hover:text-blue-700">Resources
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="absolute dropdown-menu mt-2 bg-white border rounded-lg shadow-lg w-64 p-2">
+          <a href="publications.html" class="block px-3 py-2 rounded hover:bg-gray-50">Publications</a>
+          <a href="press-releases.html" class="block px-3 py-2 rounded hover:bg-gray-50">Press Releases</a>
+          <a href="webinars.html" class="block px-3 py-2 rounded hover:bg-gray-50">Webinars</a>
+        </div>
+      </div>
+      <a href="partners.html" class="text-blue-700 font-semibold">Our Partners</a>
+      <a href="sponsors.html" class="hover:text-blue-700">Sponsors</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-md p-2 border">
+      <span class="sr-only">Open main menu</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm">
+      <a href="index.html" class="block py-2">Home</a>
+      <details class="py-2"><summary class="cursor-pointer">About</summary>
+        <div class="ml-4 mt-2 flex flex-col">
+          <a href="organisation.html" class="py-1">Organisation</a>
+          <a href="history.html" class="py-1">History</a>
+        </div>
+      </details>
+      <a href="membership.html" class="block py-2">Membership</a>
+      <a href="committees.html" class="block py-2">Committees</a>
+      <details class="py-2"><summary class="cursor-pointer">Forums</summary>
+        <div class="ml-4 mt-2 flex flex-col">
+          <a href="ceos-forum.html" class="py-1">CEO's Forum</a>
+          <a href="chairs-forum.html" class="py-1">Chairs Forum</a>
+        </div>
+      </details>
+      <a href="events.html" class="block py-2">Our Events</a>
+      <details class="py-2"><summary class="cursor-pointer">Resources</summary>
+        <div class="ml-4 mt-2 flex flex-col">
+          <a href="publications.html" class="py-1">Publications</a>
+          <a href="press-releases.html" class="py-1">Press Releases</a>
+          <a href="webinars.html" class="py-1">Webinars</a>
+        </div>
+      </details>
+      <a href="partners.html" class="block py-2">Our Partners</a>
+      <a href="sponsors.html" class="block py-2">Sponsors</a>
+    </div>
+  </div>
+</header>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <h1 class="text-3xl font-bold">Our Partners</h1>
+  <p class="mt-2 text-gray-600">Click a logo to visit the partner’s website.</p>
+
+  <!-- Partners Grid -->
+  <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+    <!-- Card -->
+    <a href="https://panavest.com/" target="_blank" rel="noopener" aria-label="Pan-Avest" class="group h-20 rounded-xl bg-white shadow border flex items-center justify-center p-3 hover:shadow-lg transition">
+      <img src="https://panavest.com/wp-content/uploads/2019/03/PanAvest-Logo.png" alt="Pan-Avest Logo" class="max-h-14 object-contain" onerror="this.src='images/placeholder-logo.svg';" />
+    </a>
+
+    <a href="https://example.com/acgn" target="_blank" rel="noopener" aria-label="ACGN" class="group h-20 rounded-xl bg-white shadow border flex items-center justify-center p-3 hover:shadow-lg transition">
+      <img src="https://afcgn.com/wp-content/uploads/2022/07/agcn-logo-retina.png" alt="ACGN Logo" class="max-h-14 object-contain" onerror="this.src='images/placeholder-logo.svg';" />
+    </a>
+
+    <a href="https://aprm.au.int/" target="_blank" rel="noopener" aria-label="AU / APRM" class="group h-20 rounded-xl bg-white shadow border flex items-center justify-center p-3 hover:shadow-lg transition">
+      <img src="https://aprm.au.int/sites/default/files/APRMLogo_English_Colour.svg" alt="AU / APRM Logo" class="max-h-14 object-contain" onerror="this.src='images/placeholder-logo.svg';" />
+    </a>
+
+    <a href="https://www.ifc.org/en/home" target="_blank" rel="noopener" aria-label="IFC" class="group h-20 rounded-xl bg-white shadow border flex items-center justify-center p-3 hover:shadow-lg transition">
+      <img src="https://globalabc.org/sites/default/files/members/International%20Finance%20Corporation%20%28IFC%29.jpg" alt="IFC Logo" class="max-h-14 object-contain" onerror="this.src='images/placeholder-logo.svg';" />
+    </a>
+
+    <a href="https://www.essex.ac.uk/" target="_blank" rel="noopener" aria-label="University of Essex" class="group h-20 rounded-xl bg-white shadow border flex items-center justify-center p-3 hover:shadow-lg transition">
+      <img src="https://goodlogo.com/images/logos/university_of_essex_logo_3621.gif" alt="UN Global Compact Logo" class="max-h-14 object-contain" onerror="this.src='images/placeholder-logo.svg';" />
+    </a>
+
+    <a href="https://example.com/afcfta" target="_blank" rel="noopener" aria-label="AfCFTA" class="group h-20 rounded-xl bg-white shadow border flex items-center justify-center p-3 hover:shadow-lg transition">
+      <img src="https://shippers.org.gh/wp-content/uploads/2023/04/IMG-1941.jpg" alt="AfCFTA Logo" class="max-h-14 object-contain" onerror="this.src='images/placeholder-logo.svg';" />
+    </a>
+
+    <a href="https://uok.ac.rw/" target="_blank" rel="noopener" aria-label="University of Kigali" class="group h-20 rounded-xl bg-white shadow border flex items-center justify-center p-3 hover:shadow-lg transition">
+      <img src="https://uok.ac.rw/wp-content/uploads/2024/05/NEW-UoK-Logo-e1717660118908.png" alt="University of Kigali Logo" class="max-h-14 object-contain" onerror="this.src='images/placeholder-logo.svg';" />
+    </a>
+
+    <a href="https://africa.unglobalcompact.org/" target="_blank" rel="noopener" aria-label="Global Compact" class="group h-20 rounded-xl bg-white shadow border flex items-center justify-center p-3 hover:shadow-lg transition">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/UN_Global_Compact_logo.svg/768px-UN_Global_Compact_logo.svg.png?20220402045249" alt="Global Compact Logo" class="max-h-14 object-contain" onerror="this.src='images/placeholder-logo.svg';" />
+    </a>
+  </div>
+
+  <!-- Helper: how to add a new partner -->
+  <!-- ACGN: Partner Video Intros (ADD-ON) -->
+<details id="acgn-video-details" open style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:16px;margin-top:24px;">
+  <summary style="font-weight:600;cursor:pointer;">Partner Video Intros</summary>
+
+  <div id="acgn-video-gallery" style="margin-top:1rem;">
+    <p style="margin:0 0 8px 0;color:#374151;"></p>
+
+    <div id="videoGrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">
+      <!-- Video Card 1 – replace data-video-id with your YouTube ID -->
+      <div data-video-id="bd1HC4OnFEU" style="border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:#fff;">
+        <div style="position:relative;padding-bottom:56.25%;height:0;">
+          <div id="acgn-player-inner-1" style="position:absolute;top:0;left:0;width:100%;height:100%;"></div>
+        </div>
+        <div style="padding:8px 10px;font-size:14px;color:#374151;">Partner</div>
+      </div>
+
+      <!-- Video Card 2 -->
+      <div data-video-id="tKSSSaRg9Pk" style="border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:#fff;">
+        <div style="position:relative;padding-bottom:56.25%;height:0;">
+          <div id="acgn-player-inner-2" style="position:absolute;top:0;left:0;width:100%;height:100%;"></div>
+        </div>
+        <div style="padding:8px 10px;font-size:14px;color:#374151;">Partner</div>
+      </div>
+
+      <!-- Video Card 3 -->
+      <div data-video-id="rR9FPgpEe5E" style="border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:#fff;">
+        <div style="position:relative;padding-bottom:56.25%;height:0;">
+          <div id="acgn-player-inner-3" style="position:absolute;top:0;left:0;width:100%;height:100%;"></div>
+        </div>
+        <div style="padding:8px 10px;font-size:14px;color:#374151;">Partner</div>
+      </div>
+    </div>
+
+    <!-- Helper: how to add -->
+  </div>
+</details>
+<!-- /ACGN: Partner Video Intros (ADD-ON) -->
+
+</section>
+
+<footer class="border-t border-gray-100 mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-sm text-gray-600">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Logo small" class="h-8 w-8 object-contain" />
+        <span>&copy; <span id="year"></span> African Corporate Governance Network</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="hover:text-blue-700">Home</a>
+        <a href="membership.html" class="hover:text-blue-700">Membership</a>
+        <a href="events.html" class="hover:text-blue-700">Our Events</a>
+        <a href="partners.html" class="hover:text-blue-700">Partners</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+</script>
+<!-- ACGN: YouTube IFrame API -->
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<!-- ACGN: One-at-a-time playback controller -->
+<script>
+  (function(){
+    var players = [];
+
+    function buildPlayers(){
+      var cards = document.querySelectorAll('#videoGrid > div[data-video-id]');
+      cards.forEach(function(card, idx){
+        var inner = card.querySelector('[id^="acgn-player-inner-"]');
+        var videoId = card.getAttribute('data-video-id');
+
+        var p = new YT.Player(inner.id, {
+          videoId: videoId,
+          playerVars: { rel: 0, modestbranding: 1, playsinline: 1 },
+          events: {
+            'onStateChange': function(e){
+              if(e.data === YT.PlayerState.PLAYING){
+                // Pause every other player
+                players.forEach(function(other){
+                  if(other !== e.target && other.pauseVideo){
+                    try { other.pauseVideo(); } catch(_) {}
+                  }
+                });
+              }
+            }
+          }
+        });
+
+        players.push(p);
+      });
+    }
+
+    // Expose to the IFrame API
+    window.onYouTubeIframeAPIReady = function(){
+      try { buildPlayers(); } catch(e) { console.error(e); }
+    };
+  })();
+</script>
+<!-- /ACGN: One-at-a-time playback controller -->
+
+</body>
+</html>

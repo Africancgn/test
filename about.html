@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · Placeholder</title>
+  <meta name="description" content="A clean-room scaffold for an NGO/network website. Replace all placeholder content with your own.">
+  <link rel="icon" href="/assets/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Simple container widths */
+    .container{max-width:1200px;margin:0 auto;padding:0 1rem;}
+    /* Balanced text utility */
+    .balanced{text-wrap:balance;}
+    /* Card */
+    .card{@apply bg-white rounded-2xl shadow p-6;}
+    /* Hero gradient */
+    .hero-bg{background: radial-gradient(1200px 400px at 20% 20%, rgba(59,130,246,.15), transparent), 
+                      radial-gradient(1200px 400px at 80% 20%, rgba(16,185,129,.12), transparent);}
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+  <div class="container flex items-center justify-between py-3">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="h-10 w-10 rounded-xl bg-gray-900 text-white grid place-items-center font-semibold">A</div>
+      <div class="leading-tight">
+        <div class="font-bold tracking-tight">AFCGN (Placeholder)</div>
+        <div class="text-xs text-gray-500 -mt-0.5">African governance network site scaffold</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a class="hover:text-gray-900 text-gray-600" href="about.html">About</a>
+      <a class="hover:text-gray-900 text-gray-600" href="programs.html">Programs</a>
+      <a class="hover:text-gray-900 text-gray-600" href="events.html">Events</a>
+      <a class="hover:text-gray-900 text-gray-600" href="news.html">News</a>
+      <a class="hover:text-gray-900 text-gray-600" href="partners.html">Partners</a>
+      <a class="px-4 py-2 rounded-xl bg-gray-900 text-white hover:bg-black" href="contact.html">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden inline-flex items-center p-2 rounded-xl border">
+      <span class="sr-only">Open menu</span>☰
+    </button>
+  </div>
+  <div id="mobileNav" class="md:hidden hidden border-t bg-white">
+    <div class="container py-2 flex flex-col gap-2 text-sm">
+      <a href="about.html" class="py-2">About</a>
+      <a href="programs.html" class="py-2">Programs</a>
+      <a href="events.html" class="py-2">Events</a>
+      <a href="news.html" class="py-2">News</a>
+      <a href="partners.html" class="py-2">Partners</a>
+      <a href="contact.html" class="py-2 font-medium">Contact</a>
+    </div>
+  </div>
+</header>
+<script>
+  const btn = document.getElementById('menuBtn');
+  const nav = document.getElementById('mobileNav');
+  if (btn) btn.addEventListener('click', ()=> nav.classList.toggle('hidden'));
+</script>
+
+    <section class="container py-16 prose max-w-none">
+      <h1>About Us</h1>
+      <p>This page holds your official background, governance structure, and objectives. Replace all text with your own content.</p>
+      <h2>Governance</h2>
+      <ul>
+        <li>Board & Secretariat overview</li>
+        <li>Committees</li>
+        <li>Policies</li>
+      </ul>
+    </section>
+    <footer class="mt-20 border-t">
+  <div class="container py-10 grid md:grid-cols-4 gap-8 text-sm">
+    <div>
+      <div class="font-semibold mb-2">AFCGN (Placeholder)</div>
+      <p class="text-gray-600">Swap all placeholder text & media with your official content.</p>
+    </div>
+    <div>
+      <div class="font-semibold mb-2">Quick links</div>
+      <ul class="space-y-1 text-gray-600">
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-semibold mb-2">Legal</div>
+      <ul class="space-y-1 text-gray-600">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-semibold mb-2">Contact</div>
+      <p class="text-gray-600">Email: info@example.org</p>
+      <p class="text-gray-600">Address: Your address here</p>
+    </div>
+  </div>
+  <div class="py-4 text-center text-xs text-gray-500">Scaffold generated on September 13, 2025. Replace with your real details.</div>
+</footer>
+</body>
+</html>
